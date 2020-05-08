@@ -21,7 +21,7 @@ class App extends React.Component {
     <div className="App">
       <header className="App-header">
         <h1>Wondr Image Fetch</h1>
-       
+       <img src="./logo.svg"></img>
       </header>
       <p>
           Images Grid
