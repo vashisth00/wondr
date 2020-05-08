@@ -1,20 +1,21 @@
-import React from "react";
-import { Router, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import { createBrowserHistory as createHistory } from "history";
-import TopBar from "./TopBar";
-import ImageSearchPage from "./ImageSearchPage";
-import "./App.css";
-const history = createHistory();
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+const BASE_URL = "https://picsum.photos/v2/list";
+
 function App() {
   return (
     <div className="App">
-      <Router history={history}>
-        <TopBar />
-        <Route path="/" exact component={HomePage} />
-        <Route path="/imagesearch" exact component={ImageSearchPage} />
-      </Router>
+      <header className="App-header">
+        <h1>Wondr Image Fetch</h1>
+       
+      </header>
+      <p>
+          Images Grid
+          </p>
     </div>
   );
 }
+
 export default App;

@@ -2,7 +2,7 @@ import React from "react";
 import { getImages } from "./request";
 import InfiniteScroll from "react-infinite-scroller";
 import Masonry from "react-masonry-component";
-import "./HomePage.css";
+import "./App.css";
 import { masonryOptions } from "./exports";
 function HomePage() {
   const [images, setImages] = React.useState([]);
