@@ -27,7 +27,7 @@ let Collage = () => {
 
 
 
-  const fetchImages = (count = 100) => {
+  const fetchImages = (count = 100000) => {
     const apiRoot = "https://picsum.photos/v2/";
     const accessKey =
       "a22f61e98da4efa25d8860e77a91a596867dd335ecdf7feb12e086943db9565a";

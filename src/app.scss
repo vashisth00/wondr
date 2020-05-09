@@ -8,8 +8,8 @@
   
   .image-grid {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 9px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     grid-auto-rows: minmax(50px, auto);
     
     .image-item:nth-child(5n){
