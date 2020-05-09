@@ -47,11 +47,19 @@ let Collage = () => {
       <div className="hero-body">
         <div className="container">
           <div className="header content">
-            <h2 className="subtitle is-6">Code Challenge #16</h2>
-            <h1 className="title is-1">
-              Infinite Scroll Unsplash Code Challenge
-            </h1>
-            <img src={logo}/>
+          <img src={logo}/>
+          <div className="hello">
+            <h2 className="wondr">Wondr Images</h2>
+            </div>
+            <h3 className="title is-1">
+              Picsum Photo fetch | Image Grid 
+            </h3>
+            <h4>
+              InfiniteScroll + Grayscale Button + Details on Photo Click
+            </h4>
+            <h5>
+              5 Photos in a row in Desktop and 2 in Mobile
+            </h5>
           </div>
 
           <InfiniteScroll
