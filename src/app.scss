@@ -7,7 +7,7 @@
       width: fit-content;
   }
   .wondr{
-    background-color: #FDEB52;
+    background-color: #fdeb5285;
     width: 100%;
     text-align: center;
   }
@@ -18,18 +18,17 @@
   
   .image-grid {
     display: grid;
-    grid-gap: 9px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     grid-auto-rows: minmax(50px, auto);
     
     .image-item:nth-child(5n){
+        padding-top: 10px;
       grid-column-end: span 2;
     }
     
-    img{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    img{    width: 100%;
+        height: 90%;
+        object-fit: cover;
     }
   }

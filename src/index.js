@@ -3,22 +3,23 @@ import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroller';
 import './App.css';
 import logo from './0.png'
-
 import ReactDOM from 'react-dom';
 import './app.scss'
 
-var CHF ="https://picsum.photos/id/870/200/300?grayscale&blur=2"
-
-const BASE_URL = "https://picsum.photos/v2/list?page=2&limit=100";
-
-const UnsplashImage = ({ url }) => (
+const UnsplashImage = ({ url,newp }) => (
   <div className="image-item">
-    <img src={url} />
+    <img onClick={e => {this.showModal();}} src={url} />
+    <div>Author: {newp}</div>
   </div>
+);
+
+const Author = ({ newp }) => (
+<div>{newp}</div>
 );
 
 let Collage = () => {
   const [images, setImages] = React.useState([]);
+  const [post] = React.useState([]);
   const [loaded, setIsLoaded] = React.useState(false);
 
   React.useEffect(() => {
@@ -78,8 +79,18 @@ let Collage = () => {
                 ? images.map((image) => (
                     <UnsplashImage
                       url={image.download_url}
+                      newp={image.author}
                     />
                   ))
+                
+                : ""}
+                  {loaded
+                ? post.map((post) => (
+                    <Author
+                      newp={post.author}
+                    />
+                  ))
+                
                 : ""}
             </div>
           </InfiniteScroll>
